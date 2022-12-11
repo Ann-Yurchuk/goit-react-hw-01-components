@@ -1,0 +1,48 @@
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 400px;
+    height: 120px;
+    margin-bottom: 10px;
+    border-radius: 2%;
+    border: 1px solid rgb(230, 228, 223);
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+                rgb(0 0 0 / 14%) 0px 3px 4px 0px,
+                rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+        
+}
+
+.status{
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 50px 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(230, 228, 223);
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.true{
+composes: status;
+background-color: green;
+}
+
+.false{
+composes: status;
+background-color: red;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid rgb(230, 228, 223);
+    border-radius: 5%;
+    background-color: rgb(230, 228, 223);
+}
+
+.name{
+    margin: 25px 10px 25px 10px ;
+}
