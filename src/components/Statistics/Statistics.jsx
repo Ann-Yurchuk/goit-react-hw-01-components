@@ -5,10 +5,10 @@ export const Statistics = ({title, stats}) => {
     return <Section>
      {title && (<h2>{title}</h2>)} 
 <StatisticList>
-      {stats.map((stat) => 
-        <StatisticItem key={stat.id}>
-          <span>{stat.label}</span>
-          <span>{stat.percentage + "%"}</span>
+      {stats.map(({id, label, percentage}) => 
+        <StatisticItem key={id}>
+          <span>{label}</span>
+          <span>{percentage + "%"}</span>
         </StatisticItem>
       )}
       </StatisticList>
